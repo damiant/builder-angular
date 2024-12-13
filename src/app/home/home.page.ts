@@ -7,11 +7,10 @@ import { toolsBuilderComponent } from '../tools/tools.builder';
 
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
-  standalone: true,
-  imports: [Content, IonHeader, IonToolbar, IonTitle, IonContent],
+    selector: 'app-home',
+    templateUrl: 'home.page.html',
+    styleUrls: ['home.page.scss'],
+    imports: [Content, IonHeader, IonToolbar, IonTitle, IonContent]
 })
 export class HomePage implements OnInit {
   content: BuilderContent | null = null;
