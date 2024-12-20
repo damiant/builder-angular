@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-store-card',
@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StoreCardComponent  implements OnInit {
 
-  storeName: string = '';
-  description: string = '';
+  storeName = input('');
+  @Input() description: string = '';
   imageUrl: string = '';
   constructor() { }
 
