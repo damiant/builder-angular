@@ -12,10 +12,12 @@
       <ion-title size="large">Builder Sample</ion-title>
     </ion-toolbar>
   </ion-header>
+  
 
   @if (content) {
   <builder-content [model]="model" [content]="content" [apiKey]="apiKey" [customComponents]="customComponents"></builder-content>
   } @else {
     Loading Content...
   }
+  <app-stores></app-stores>
 </ion-content>

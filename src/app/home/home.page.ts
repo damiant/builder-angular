@@ -4,13 +4,14 @@ import { fetchOneEntry, type BuilderContent } from '@builder.io/sdk-angular';
 import { Content } from '@builder.io/sdk-angular';
 import { environment } from 'src/environments/environment';
 import { toolsBuilderComponent } from '../tools/tools.builder';
+import { StoresPage } from '../stores/stores.page';
 
 
 @Component({
     selector: 'app-home',
     templateUrl: 'home.page.html',
     styleUrls: ['home.page.scss'],
-    imports: [Content, IonHeader, IonToolbar, IonTitle, IonContent]
+    imports: [Content, IonHeader, IonToolbar, IonTitle, IonContent, StoresPage]
 })
 export class HomePage implements OnInit {
   content: BuilderContent | null = null;
