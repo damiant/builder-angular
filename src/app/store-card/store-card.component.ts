@@ -11,6 +11,18 @@ export class StoreCardComponent  implements OnInit {
   storeName = input('');
   @Input() description: string = '';
   imageUrl: string = '';
+
+  // Getter/Setter Style
+  private _hasAwesomeness: boolean = false;
+  
+  @Input()
+  get hasAwesomeness(): boolean {
+    return this._hasAwesomeness;
+  }  
+  set hasAwesomeness(value: boolean) {
+    this._hasAwesomeness = true;
+  }
+
   constructor() { }
 
   ngOnInit() {}
