@@ -24,6 +24,7 @@ export class StoresPage implements OnInit {
       model: this.model,
       userAttributes: {
         urlPath,
+        tier: 'gold',
       },
     });
     this.content = content;

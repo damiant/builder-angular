@@ -15,7 +15,7 @@
   
 
   @if (content) {
-  <builder-content [model]="model" [content]="content" [apiKey]="apiKey" [customComponents]="customComponents"></builder-content>
+  <builder-content [data]="data" [context]="context" [model]="model" [content]="content" [apiKey]="apiKey" [customComponents]="customComponents"></builder-content>
   } @else {
     Loading Content...
   }

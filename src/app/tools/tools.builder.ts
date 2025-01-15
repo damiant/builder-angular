@@ -5,7 +5,7 @@ import { ToolsComponent } from "./tools.component";
 export const toolsBuilderComponent: RegisteredComponent =
 {
     component: ToolsComponent,
-    name: "Tools",
+    name: "Tools",    
     inputs: [
         {
             name: 'title',
